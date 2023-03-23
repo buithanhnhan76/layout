@@ -1,0 +1,19 @@
+@import "./varibles";
+@import "./reset";
+@import "./normalize";
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  font-size: $regularFontSize;
+  color: $regularBlack;
+}

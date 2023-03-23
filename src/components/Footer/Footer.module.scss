@@ -1,0 +1,22 @@
+@import "src/assets/styles/_varibles";
+
+.footer {
+  border-top: 1px solid $lightGray;
+  margin-top: 30px;
+  height: 80px;
+  padding: 30px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 100px;
+
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 180px;
+
+  }
+}

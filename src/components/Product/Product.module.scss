@@ -1,0 +1,36 @@
+@import "src/assets/styles/_utils";
+
+.product {
+
+  .product__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .product__content {
+    @include line-clamp(11);
+
+    overflow: hidden;
+    margin-top: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+
+    .product__image {
+      float: left;
+    }
+
+    &::after {
+      @extend .clear-fix;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .product__title {
+      font-size: 2.4rem;
+    }
+  }
+}

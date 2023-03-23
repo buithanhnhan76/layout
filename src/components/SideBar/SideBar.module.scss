@@ -1,0 +1,39 @@
+@import "src/assets/styles/_varibles";
+@import "src/assets/styles/_utils";
+
+.side-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100vh;
+  background-color: $strongBlack;
+
+  .side-bar__link {
+    @include reset-link-styles();
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $regularGray;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $strongGray;
+    padding: 15px;
+
+    &:hover {
+      color: $regularWhite;
+      background-color: $strongGray;
+    }
+
+    &[class*=" active"] {
+      color: $regularWhite;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 150px;
+  }
+}

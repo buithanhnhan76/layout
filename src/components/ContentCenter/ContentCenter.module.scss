@@ -1,0 +1,27 @@
+@import "src/assets/styles/_varibles";
+@import "src/assets/styles/_utils";
+
+.content-center {
+  text-align: center;
+  padding: 40px 30px;
+  background-color: $lightBlue;
+
+  .content-center__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
+
+  .content-center__paragraph {
+    @include line-clamp(5);
+
+    overflow: hidden;
+    margin: 18px auto 0;
+    max-width: 972px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+}

@@ -1,0 +1,28 @@
+@import "./varibles";
+
+.click-able {
+  cursor: pointer;
+}
+
+.clear-fix::after {
+  content: "";
+  clear: both;
+}
+
+@mixin text-color-transform($color) {
+  @extend .click-able;
+  color: $color;
+}
+
+@mixin reset-link-styles() {
+  text-decoration: none;
+  color: initial;
+}
+
+@mixin line-clamp($numberOfLine) {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $numberOfLine;
+  line-clamp: $numberOfLine;
+  -webkit-box-orient: vertical;
+}
